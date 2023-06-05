@@ -6,7 +6,9 @@ function sendRequest(name, phone, address, goods, sum) {
     }
     data.order.address = "ул. " + address.street + ", дом"+ address.house + " , " + address.entrance + " подъезд, " + address.floor + " этаж, " + "кв." + address.flat;    
     data.order.sum = sum;
-    data.client = `${name + ` ` +phone}`;
+    data. name = `Иван`;
+    data. phone = `+7(987)65-43-210`;
+    data.client = `${data.client}`;
     let jsonData = JSON.stringify({data});
     return jsonData;
 }  
